@@ -1,0 +1,26 @@
+<!--# citation: https://www.w3schools.com/tags/tag_li.asp -->
+<!--# https://www.w3schools.com/html/html_links.asp -->
+
+<!DOCTYPE html>
+{% extends "basic/base.html" %}
+
+{% load static %}
+{% load bootstrap5 %}
+
+
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+
+{% block content %} <!--https://epicbootstrap.com/snippets/header-blue-->
+<div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+    <h1></h1>
+    <p>Schedule watch parties, cinema trips and more! Share your love for TV shows and movies with your friends. Log in to get started</p>
+</div>
+
+{% endblock content %}
